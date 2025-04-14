@@ -17,7 +17,7 @@
     "serialisation"
   ],
   "author": "Dan Groshev",
-  "license": "MIT/Apache-2.0",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/si14/stuffed-naan-js/issues"
   },

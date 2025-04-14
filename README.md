@@ -1,4 +1,4 @@
-[![license: MIT/Apache-2.0](https://img.shields.io/badge/license-MIT%2FApache--2.0-blue.svg)]
+[![license: MIT/](https://img.shields.io/badge/license-MIT-blue.svg)]
 
 # Stuffed-Na(a)N
 
