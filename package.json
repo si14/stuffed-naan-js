@@ -1,0 +1,32 @@
+{
+  "name": "stuffed-naan",
+  "version": "1.0.0",
+  "description": "Stuff your Na(a)Ns",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/si14/stuffed-naan-js.git"
+  },
+  "keywords": [
+    "serialisation"
+  ],
+  "author": "Dan Groshev",
+  "license": "MIT/Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/si14/stuffed-naan-js/issues"
+  },
+  "homepage": "https://github.com/si14/stuffed-naan-js#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "prettier": "^3.5.3",
+    "ts-jest": "^29.3.2",
+    "typescript": "^5.8.3"
+  }
+}
