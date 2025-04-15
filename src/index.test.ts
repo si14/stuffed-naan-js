@@ -3,9 +3,6 @@ import { describe, test, expect } from "@jest/globals";
 
 describe("encode and decode functions", () => {
   test("encode should only return NaN values", () => {
-    console.log(encode("hello world"));
-    expect(1).toBe(2);
-
     const encodedSimple = encode(42);
     expect(Array.isArray(encodedSimple)).toBe(true);
     expect(encodedSimple.length).toEqual(1);
@@ -37,12 +34,12 @@ describe("encode and decode functions", () => {
   test("should throw an error when decoding an empty array", () => {
     expect(() => {
       decode([]);
-    }).toThrow("Input must contain at least one NaN");
+    }).toThrow("Input must contain at least one Na(a)N");
   });
 
   test("should throw an error when provided with non-stuffed NaaNs", () => {
     expect(() => {
       decode([NaN, NaN, NaN]);
-    }).toThrow("Input NaNs are empty, stuffing must have fallen out");
+    }).toThrow("Input Na(a)Ns are empty, stuffing must have fallen out");
   });
 });

@@ -53,10 +53,16 @@ console.log(decode(encoded.map(x => x * 2)));
 // Output: Hello world
 ```
 
+## Advantages
+
+### Efficiency
+
 `stuffed-naan` is efficient. Community Edition achieves a compression ratio of -25%.
-In simple terms, for every 1024 bytes of data, you get 1368 bytes of float64 `Na(a)N`s back!
+For every 1024 bytes of data, you get 1368 bytes of float64 `Na(a)N`s back!
 This is an industry-leading `Na(a)N` compression, and it gets even better with a 
 [commercial version](https://github.com/si14/stuffed-naan-js?tab=readme-ov-file#commercial-licencing).
+
+### Performance
 
 `stuffed-naan` is performant. Thanks to advanced byte-manipilation capabilities available in
 ECMAScript® 2026, the overhead of 
