@@ -1,8 +1,9 @@
-![license: MIT/](https://img.shields.io/badge/license-MIT-blue.svg)
+![license: MIT/](https://img.shields.io/badge/license-MIT-blue.svg) ![NPM Version](https://img.shields.io/npm/v/stuffed-naan)
 
-# Stuffed-Na(a)N
 
-![A photo of a garlic naan](https://private-user-images.githubusercontent.com/316910/433589102-d4382a30-4f1e-42e4-bb83-957480ad4bcb.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQ2NzI4ODEsIm5iZiI6MTc0NDY3MjU4MSwicGF0aCI6Ii8zMTY5MTAvNDMzNTg5MTAyLWQ0MzgyYTMwLTRmMWUtNDJlNC1iYjgzLTk1NzQ4MGFkNGJjYi5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQxNFQyMzE2MjFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01N2EwMWQzMzkwNWEwNTVmMDQ1OGFlOGI5OWMzYTNlNjZjYjc3NWExMjkzMGVjNDdhYjBlOTg4NDQ3OTI1YmRlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.4BwyJ9nKqVSFUaJu-hwmxWeJLxhpV3qkyiRRb5YgUiE)
+# Stuffed-Na(a)N: stuff your `NaN`s
+
+![A photo of a garlic naan](naan.jpg)
 
 _[Joy via Wikimedia](https://commons.wikimedia.org/wiki/File:Garlic_naan_1.jpg)_
 
@@ -28,8 +29,7 @@ console.log((a * 2) - 5)
 // Output: NaN
 ```
 
-Starting today, you can finally make `NaN`s useful. 
-Just stuff ~~`NaN`~~ `Na(a)N`s with your data! 
+With `stuffed-naan`, you can finally make use of `NaN`s. Just stuff ~~`NaN`~~ `Na(a)N`s with your data! 
 
 ```js
 import { encode, decode } from 'stuffed-naan';
@@ -42,8 +42,8 @@ console.log(decode(encoded));
 // Output: Hello world
 ```
 
-To quote Sun Tzu, "if you can't fight the enemy, use the enemy's advantage to your advantage".
-`Na(a)N`s preserve data when you run mathematical operations on them:
+To quote Sun Tzu, "if you can't beat the enemy, use the enemy's advantage to your advantage".
+`Na(a)N`s preserve data even when used in mathematical operations:
 
 ```js
 import { encode, decode } from 'stuffed-naan';
@@ -53,19 +53,25 @@ console.log(decode(encoded.map(x => x * 2)));
 // Output: Hello world
 ```
 
-## Advantages
+## Why `stuffed-naan`
 
-### Efficiency
+### Compact 💿
 
-`stuffed-naan` is efficient. Community Edition achieves a compression ratio of -25%.
-For every 1024 bytes of data, you get 1368 bytes of float64 `Na(a)N`s back!
-This is an industry-leading `Na(a)N` compression, and it gets even better with a 
-[commercial version](https://github.com/si14/stuffed-naan-js?tab=readme-ov-file#commercial-licencing).
+`stuffed-naan` is compact. Community Edition achieves a compression ratio of -25%.
+That means for every 1024 bytes of data, you get 1368 bytes of float64 `Na(a)N`s back!
+This is an industry-beating `Na(a)N` compression. For even better compression, consider the 
+[Enterprise Edition](https://github.com/si14/stuffed-naan-js?tab=readme-ov-file#enterprise-edition-).
 
-### Performance
+### Blazing fast 🚀
 
-`stuffed-naan` is performant. Thanks to advanced byte-manipilation capabilities available in
-ECMAScript® 2026, the overhead of 
+`stuffed-naan` is blazing fast. Thanks to advanced byte-manipulation capabilities available in ECMAScript® 2026, 
+the overhead of stuffing is minimal. `Na(a)N`ification of a thousand small objects takes 1–3ms.
+
+### Privacy-first 🚫👀
+
+`stuffed-naan` is privacy-first, first of its kind privacy-preserving encoding. An array of `Na(a)N`s 
+can't be copypasted without losing the information, which makes `stuffed-naan` indispensable to protect your
+customers' PII. Contact [`stuffed-naan` DPO](mailto:stuffed-naan-dpo@dgroshev.com) to know more.
 
 ## Installation
 
@@ -78,34 +84,30 @@ Alternatively, you can include `stuffed-naan` on your page:
 `<script src="https://unpkg.com/stuffed-naan@1.0.0/dist/index.js"></script>`
 
 
-## Why?
+## Enterprise Edition 🏦
 
-Yes.
-
-
-## Commercial licencing
-
-Commercial licence:
+Enterprise Edition includes:
 
 - ✅ 6% more efficient encoding
-- ✅ Supports big-endian processors, such as IBM zSeries
-- ✅ Enables further development and support of `stuffed-naan`
+- ✅ Support for big-endian processors, such as IBM zSeries
+- ✅ A dedicated Customer Success Manager
 
-Please contact sales at [stuffed-naan-sales@dgroshev.com](mailto:stuffed-naan-sales@dgroshev.com) for a quote.
+[Contact sales](mailto:stuffed-naan-sales@dgroshev.com) for pricing.
 
 
 ## Roadmap
 
-- [ ] Public benchmarks
-- [ ] Rust version
-- [ ] Formal verification
+- [ ] Public benchmark history
+- [ ] Fuzzing
+- [ ] Rewrite in Rust
+- [ ] Formal verification with Kani
 
 
 ## No but seriously
 
 IEEE 754 [defines](https://en.wikipedia.org/wiki/NaN#Encoding) NaN to be represented by a floating number
-with all exponent bits set to 1 and at least one non-zero exponent bit. The value of the exponent can be anything!
-The IEEE won't object if we do crimes and smuggle our own bytes there.
+with all exponent bits set to 1 and at least one non-zero mantissa bit. The value of the exponent can be anything!
+The IEEE won't object if we do crimes and smuggle our own data there.
 
 It's silly but it works.
 
