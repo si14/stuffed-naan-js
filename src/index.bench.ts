@@ -1,4 +1,4 @@
-import { decode, encode } from "./index.ts";
+import { decode, encode } from "./index";
 import { benchmarkSuite } from "jest-bench";
 
 const testData = {

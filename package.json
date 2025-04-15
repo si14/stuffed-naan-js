@@ -1,6 +1,6 @@
 {
   "name": "stuffed-naan",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Stuff your Na(a)Ns",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -23,7 +23,11 @@
     "url": "https://github.com/si14/stuffed-naan-js/issues"
   },
   "homepage": "https://github.com/si14/stuffed-naan-js#readme",
+  "exports": {
+    "default": "./dist/index.js"
+  },
   "devDependencies": {
+    "@types/benchmark": "^2.1.5",
     "@types/jest": "^29.5.14",
     "jest": "^29.7.0",
     "jest-bench": "^29.7.1",
