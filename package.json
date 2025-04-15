@@ -1,6 +1,6 @@
 {
   "name": "stuffed-naan",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Stuff your Na(a)Ns",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

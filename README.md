@@ -42,7 +42,7 @@ console.log(decode(encoded));
 // Output: Hello world
 ```
 
-To quote Sun Tzu, "if you can't beat the enemy, use the enemy's advantage to your advantage".
+To quote Sun Tzu, "If you can't beat the enemy, use the enemy's advantage to your advantage".
 `Na(a)N`s preserve data even when used in mathematical operations:
 
 ```js
@@ -58,8 +58,8 @@ console.log(decode(encoded.map(x => x * 2)));
 ### Compact 💿
 
 `stuffed-naan` is compact. Community Edition achieves a compression ratio of -25%.
-That means for every 1024 bytes of data, you get 1368 bytes of float64 `Na(a)N`s back!
-This is an industry-beating `Na(a)N` compression. For even better compression, consider the 
+That means, for every 1024 bytes of data, you get 1368 bytes of float64 `Na(a)N`s back!
+This is an industry-beating level of `Na(a)N` compression. For even better compression, consider the 
 [Enterprise Edition](https://github.com/si14/stuffed-naan-js?tab=readme-ov-file#enterprise-edition-).
 
 ### Blazing fast 🚀
@@ -69,9 +69,9 @@ the overhead of stuffing is minimal. `Na(a)N`ification of a thousand small objec
 
 ### Privacy-first 🚫👀
 
-`stuffed-naan` is privacy-first, first of its kind privacy-preserving encoding. An array of `Na(a)N`s 
-can't be copypasted without losing the information, which makes `stuffed-naan` indispensable to protect your
-customers' PII. Contact [`stuffed-naan` DPO](mailto:stuffed-naan-dpo@dgroshev.com) to know more.
+`stuffed-naan` is privacy-first. It's a first-of-its-kind privacy-preserving encoding, since an array of `Na(a)N`s 
+can't be copypasted without losing the information. This makes `stuffed-naan` indispensable to protect your
+customers' PII. Contact [`stuffed-naan` DPO](mailto:stuffed-naan-dpo@dgroshev.com) to learn more.
 
 ## Installation
 
@@ -79,9 +79,12 @@ customers' PII. Contact [`stuffed-naan` DPO](mailto:stuffed-naan-dpo@dgroshev.co
 npm install stuffed-naan
 ```
 
-Alternatively, you can include `stuffed-naan` on your page:
+Or you can do this in your browser console:
 
-`<script src="https://unpkg.com/stuffed-naan@1.0.0/dist/index.js"></script>`
+```js
+const stuffedNaan = await import('https://unpkg.com/stuffed-naan');
+stuffedNaan.encode("hello world");
+```
 
 
 ## Enterprise Edition 🏦
@@ -97,18 +100,28 @@ Enterprise Edition includes:
 
 ## Roadmap
 
-- [ ] Public benchmark history
-- [ ] Fuzzing
-- [ ] Rewrite in Rust
-- [ ] Formal verification with Kani
+- ⚠️ Public benchmark history
+- ⚠️ Fuzzing
+- ⚠️ Rewrite in Rust
+- ⚠️ Formal verification with Kani
 
 
 ## No but seriously
 
-IEEE 754 [defines](https://en.wikipedia.org/wiki/NaN#Encoding) NaN to be represented by a floating number
-with all exponent bits set to 1 and at least one non-zero mantissa bit. The value of the exponent can be anything!
-The IEEE won't object if we do crimes and smuggle our own data there.
+JS numbers are IEEE 754 floating point numbers, 64-bit long. They consist of a sign bit, an exponent, and a mantissa.
 
-It's silly but it works.
+Here's how it all looks in memory:
 
-And then I couldn't resist overdoing the naan pun. Support your local curry house!
+![Memory layout of a float64 from Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/IEEE_754_Double_Floating_Point_Format.svg/1024px-IEEE_754_Double_Floating_Point_Format.svg.png)
+
+When mathematical operations on floats are applied incorrectly (for example, `0/0`), they return special values
+called Not a Number, or NaN for short. NaNs are represented as floating point numbers with the exponent set to all 1s
+and at least one non-zero bit in the fraction part.
+
+Which means I can commit crimes and smuggle data in the fraction part. IEEE is *not* going to stop me!
+
+This trick is silly, but it works. Of course, I couldn't resist overdoing the naan pun.
+
+Support your local curry house! (Or, better yet, [Come Back Alive](https://savelife.in.ua/en/))
+
+[Bluesky](https://bsky.app/profile/dangroshev.com) / [Twitter](https://x.com/dangroshev) / [Web](https://dgroshev.com)
