@@ -1,5 +1,4 @@
 import { encode, decode } from "./index";
-import { describe, test, expect } from "@jest/globals";
 
 describe("encode and decode functions", () => {
   test("encode should only return NaN values", () => {

@@ -1,5 +1,5 @@
-import { decode, encode } from "./index";
-import { benchmarkSuite } from "jest-bench";
+import { encode } from "./index";
+import { benchmarkSuite } from "../node_modules/jest-bench/dist/index.js";
 
 const testData = {
   name: "John",

@@ -15,14 +15,17 @@
     "url": "git+https://github.com/si14/stuffed-naan-js.git"
   },
   "keywords": [
-    "serialisation"
+    "serialisation",
+    "nan",
+    "seriousbusiness"
   ],
-  "author": "Dan Groshev",
+  "author": "Dan Groshev <dan@dgroshev.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/si14/stuffed-naan-js/issues"
   },
   "homepage": "https://github.com/si14/stuffed-naan-js#readme",
+  "type": "module",
   "exports": {
     "default": "./dist/index.js"
   },
