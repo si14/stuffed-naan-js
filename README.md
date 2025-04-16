@@ -110,17 +110,17 @@ Enterprise Edition includes:
 
 JS numbers are IEEE 754 floating point numbers, 64-bit long. They consist of a sign bit, an exponent, and a mantissa.
 
-Here's how it all looks in memory:
+Here's how it all looks like in memory:
 
 ![Memory layout of a float64 from Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/IEEE_754_Double_Floating_Point_Format.svg/1024px-IEEE_754_Double_Floating_Point_Format.svg.png)
 
-When mathematical operations on floats are applied incorrectly (for example, `0/0`), they return special values
+When mathematical operations on floats are applied incorrectly (for example, `0/0`), the result is a special value
 called Not a Number, or NaN for short. NaNs are represented as floating point numbers with the exponent set to all 1s
 and at least one non-zero bit in the fraction part.
 
 Which means I can commit crimes and smuggle data in the fraction part. IEEE is *not* going to stop me!
 
-This trick is silly, but it works. Of course, I couldn't resist overdoing the naan pun.
+This trick is silly, but it works. Naturally, I couldn't resist overdoing the naan pun.
 
 Support your local curry house! (Or, better yet, [Come Back Alive](https://savelife.in.ua/en/))
 
