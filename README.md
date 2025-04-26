@@ -113,6 +113,8 @@ Enterprise Edition includes:
 
 > The applications might be real :D
 
+> I made a garlic nan: https://www.godbolt.org/z/enjv1c7Tf ([author](https://news.ycombinator.com/item?id=43804628))
+
 
 ## No but seriously
 
