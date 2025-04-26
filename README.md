@@ -106,6 +106,14 @@ Enterprise Edition includes:
 - ⚠️ Formal verification with Kani
 
 
+## Testimonials
+
+> Seems really weird to me. I would have dismissed it as someone's hobby project, but... 
+> that doesn't seem like what it's trying to be.
+
+> The applications might be real :D
+
+
 ## No but seriously
 
 JS numbers are IEEE 754 floating point numbers, 64-bit long. They consist of a sign bit, an exponent, and a mantissa.
